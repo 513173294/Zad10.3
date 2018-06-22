@@ -34,9 +34,24 @@ public class Product {
         this.cena = cena;
     }
 
-    double suma=0;
+    private double suma = 0;
+    private double max = 0;
+
 
     public double zliczCeny(Product product) {
-        return this.suma =this.cena;
+        return this.suma = this.cena;
+    }
+
+    public Product podajNajdrozszy(Product product) {
+        if (max < this.cena)
+        return product;
+        return product;
+    }
+
+
+    @Override
+    public String toString() {
+        return
+                nazwa + " " + porducent + " " + cena + " " + suma;
     }
 }

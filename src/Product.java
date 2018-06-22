@@ -33,4 +33,10 @@ public class Product {
     public void setCena(double cena) {
         this.cena = cena;
     }
+
+    double suma=0;
+
+    public double zliczCeny(Product product) {
+        return this.suma =this.cena;
+    }
 }

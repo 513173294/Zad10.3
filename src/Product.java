@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Product {
     private String nazwa;
     private String porducent;
@@ -35,18 +37,10 @@ public class Product {
     }
 
     private double suma = 0;
-    private double max = 0;
 
 
-    public double zliczCeny(Product product) {
-        return this.suma = this.cena;
-    }
 
-    public Product podajNajdrozszy(Product product) {
-        if (max < this.cena)
-        return product;
-        return product;
-    }
+
 
 
     @Override

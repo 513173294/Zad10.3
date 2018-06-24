@@ -10,11 +10,11 @@ public class Sklep {
         File plik = new File("Products.csv");
         Scanner scanner = new Scanner(plik);
 
+
         int i = 0;
+
         Product[] tablicaProduktow = new Product[5];
         double suma = 0;
-
-
         while (scanner.hasNextLine()) {
 
             String linia = scanner.nextLine();
@@ -26,7 +26,6 @@ public class Sklep {
             i++;
         }
         Product mostExpensiveProduct = Meth.findMostExpensiveProduct(tablicaProduktow);
-
 
         System.out.println(mostExpensiveProduct);
 

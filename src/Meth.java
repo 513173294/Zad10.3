@@ -16,8 +16,13 @@ static Product findMostExpensiveProduct(Product[] products) {
 
 }
 
-    static double suma=0;
-    public static double zliczCeny(Product product) {
-        return  suma= product.getCena();
+    public static double zliczCeny(Product[] products) {
+        double suma=0;
+        for (int i = 0; i <products.length ; i++) {
+            suma+=products[i].getCena();
+
+        }
+
+        return  suma;
     }
 }
